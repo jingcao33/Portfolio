@@ -5,394 +5,476 @@
     <title>Menu - Tea Ninja</title>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/mystyle.css">
+    <!-- <link rel="stylesheet" href="css/menustyle.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Josefin+Sans|Rock+Salt&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4c15271769.js" crossorigin="anonymous"></script>
   </head>
+
   <body>
-    <div class="skip"><a href="#main">Skip to Main Content</a></div>
-    <header>
-      <h1>
+    <div class="skip"><a href="#menu-main">Skip to Main Content</a></div>
+    <header role="banner">
+
+      <nav class="nav" role="navigation">
         <a href="index.html">
-          <img src="images/teaninja_logo_plain.jpg" alt="main logo">
+          <img src="images/teaninja_logo_vertical_1.png" alt="main logo" id="logo">
         </a>
-      </h1>
-      <p class = "slogan">The First Rule of Being a Ninja is Drinking Some Tea…</p>
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">About</a></li><!--
-          --><li><a href="menu.html">Menu</a></li><!--
-          --><li><a href="gallery.html">Gallery</a></li><!--
-          --><li><a href="location_n_contact.html">Location & Contact</a></li>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">About</a></li>
+          <li class="nav-item active-page"><a href="menu.html">Menu</a></li>
+          <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a href="location_n_contact.html">Location & Contact</a></li>
         </ul>
       </nav>
+
     </header>
 
-    <h2>Menu</h2>
-    <p>Every drink in Tea Ninja is selected with heart.</p>
-    <p>You can find the same drink without toppings in INVISIBILITY.</p>
-    <p>Allergic to milk or other stuffs? Find altenative in REPLICATION.</p>
-    <p>Want try something different but not that risky? Try something in the SUBSTITUTION.</p>
-    <table class="milk-tea">
-      <caption></caption>
-      <thead>
-        <tr>
-          <th scope="col" class="colhead">NINJA MILK TEA</th>
-          <th scope="col" class="colhead">INVISIBILITY</th>
-          <th scope="col" class="colhead">REPLICATION</th>
-          <th scope="col" class="colhead">SUBSTITUTION</th>
-        </tr>
-      </thead>
-      <tbody>
-       <tr>
-         <th scope="row" class="rowhead">Ninja Milk Black Tea</th>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Ninja Milk Green Tea</th>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Red Bean Matcha</th>
-         <td>Matcha Milk Tea</td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Pudding Milk Tea</th>
-         <td>Ninja Milk Black Tea</td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Coconut Milk Tea</th>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Thai Milk Tea</th>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Taro Milk Tea</th>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Rose Milk Tea</th>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Honeydew Milk Tea</th>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Caramel Macchiato</th>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Chocolate Oreo Milk Tea</th>
-         <td>Chocolate Milk Tea</td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Chocolate Milk Tea</th>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-      </tbody>
-    </table>
+    <main role="main" class="menu-container">
+      <h1 class = "slogan">
+        The First Rule of Being a Ninja is Drinking Some Tea …
+      </h1>
+      <h2 id="menu-main">Menu</h2>
+      <p>Every drink in Tea Ninja is selected with heart.</p><br>
+      <div class="ninja-tricks">
+          <div class="trick invisibility">
+            <img src="images/invisibility.png" alt="invisibility gesture">
+            <p>&nbsp;Too tired to chew stuff? Choose the same drink without toppings in INVISIBILITY.</p>
+          </div>
+          <div class="trick replication">
+            <img src="images/replication.png" alt="replication gesture">
+            <p>&nbsp;Allergic to milk or other ingredients? Find altenative in REPLICATION.</p>
+          </div>
+          <div class="trick substitution">
+            <img src="images/substitution.png" alt="substitution gesture">
+            <p>&nbsp;Want try something different but not that risky? Try something in the SUBSTITUTION.</p>
+          </div>
+      </div>
 
-    <table class="fruit-tea">
-      <caption></caption>
-      <thead>
-        <tr>
-          <th scope="col" class="colhead">NINJA FRUIT TEA</th>
-          <th scope="col" class="colhead">INVISIBILITY</th>
-          <th scope="col" class="colhead">REPLICATION</th>
-          <th scope="col" class="colhead">SUBSTITUTION</th>
-        </tr>
-      </thead>
-      <tbody>
-       <tr>
-         <th scope="row" class="rowhead">Mango Tea</th>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Jasmine Honey</th>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Lychee QQ</th>
-         <td>Lychee Green Tea</td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Passion Fruit QQ</th>
-         <td>Passion Fruit Green Tea</td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Rose Strawberry</th>
-         <td></td>
-         <td>Strawberry Green Tea</td>
-         <td>Rose Green Tea</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Peach Ice Jelly</th>
-         <td>Peach Green Tea</td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Passion Fruit Lemon-Jade</th>
-         <td></td>
-         <td>Strawberry Lemon-Jade</td>
-         <td>Passion Fruit Green Tea</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Strawberry Lemon-Jade</th>
-         <td></td>
-         <td>Passion Fruit Lemon-Jade</td>
-         <td>Strawberry Green Tea</td>
-       </tr>
-      </tbody>
-    </table>
+        <div class="menu-small milk-tea-small">
+          <p>NINJA MILK TEA</p>
+            <p>&emsp;Ninja Milk Black Tea</p>
+            <p>&emsp;Ninja Milk Green Tea</p>
+            <p>&emsp;Red Bean Matcha</p>
+            <p>&emsp;Pudding Milk Tea</p>
+            <p>&emsp;Coconut Milk Tea</p>
+            <p>&emsp;Thai Milk Tea</p>
+            <p>&emsp;Taro Milk Tea</p>
+            <p>&emsp;Rose Milk Tea</p>
+            <p>&emsp;Honeydew Milk Tea</p>
+            <p>&emsp;Caramel Macchiato</p>
+            <p>&emsp;Chocolate Oreo Milk Tea</p>
+            <p>&emsp;Chocolate Milk Tea</p>
+        </div>
+        <div class="menu-small fruit-tea-small">
+          <p>NINJA FRUIT TEA</p>
+            <p>&emsp;Mango Tea</p>
+            <p>&emsp;Jasmine Honey</p>
+            <p>&emsp;Lychee QQ</p>
+            <p>&emsp;Passion Fruit QQ</p>
+            <p>&emsp;Rose Strawberry</p>
+            <p>&emsp;Peach Ice Jelly Tea</p>
+            <p>&emsp;Passion Fruit Lemon-Jade</p>
+            <p>&emsp;Strawberry Lemon-Jade</p>
+        </div>
+        <div class="menu-small ninja-dairy-small">
+          <p>NINJA DAIRY</p>
+            <p>&emsp;Earl Grey Crème</p>
+            <p>&emsp;Jasmine Crème</p>
+            <p>&emsp;Brown Sugar Latte</p>
+            <p>&emsp;Ninja Yellow Milk</p>
+            <p>&emsp;Ninja Red Milk</p>
+            <p>&emsp;Oreo Crème Brûlée</p>
+            <p>&emsp;Brown Sugar Crème Brûlée</p>
+        </div>
+        <div class="menu-small ninja-oolong-small">
+          <p>NINJA OOLONG</p>
+            <p>&emsp;Oolong Milk Tea</p>
+            <p>&emsp;Peach Oolong</p>
+            <p>&emsp;Lychee Oolong</p>
+            <p>&emsp;Oolong Crème</p>
+            <p>&emsp;Rose Oolong</p>
+        </div>
+        <div class="menu-small slush-small">
+          <p>NINJA SLUSH</p>
+            <p>&emsp;Pineapple Slush</p>
+            <p>&emsp;Lychee Slush</p>
+            <p>&emsp;Mango Slush</p>
+            <p>&emsp;Strawberry Slush</p>
+            <p>&emsp;Grapefruit Slush</p>
+            <p>&emsp;Cappuccino Slush</p>
+            <p>&emsp;Japanese Matcha Slush</p>
+            <p>&emsp;Taro Slush</p>
+            <p>&emsp;Piña Colada Slush</p>
+            <p>&emsp;Strawberry Banana Slush</p>
+            <p>&emsp;Chocolate Banana Slush</p>
+            <p>&emsp;Chocolate Oreo Slush</p>
+            <p>&emsp;Purple Oreo Slush</p>
+        </div>
 
-    <table class="ninja-dairy">
-      <caption></caption>
-      <thead>
-        <tr>
-          <th scope="col" class="colhead">NINJA DAIRY</th>
-          <th scope="col" class="colhead">INVISIBILITY</th>
-          <th scope="col" class="colhead">REPLICATION</th>
-          <th scope="col" class="colhead">SUBSTITUTION</th>
-        </tr>
-      </thead>
-      <tbody>
-       <tr>
-         <th scope="row" class="rowhead">Earl Grey Crème</th>
-         <td>Earl Grey Black Tea</td>
-         <td>Ninja Milk Black Tea</td>
-         <td>Jasmine/Oolong Crème</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Jasmine Crème</th>
-         <td>Jasmine Green Tea</td>
-         <td>Ninja Milk Green Tea</td>
-         <td>Earl Grey/Oolong Crème</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Brown Sugar Latte</th>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Ninja Yellow Milk</th>
-         <td></td>
-         <td>Ninja Red Milk</td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Ninja Red Milk</th>
-         <td></td>
-         <td>Ninja Yellow Milk</td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Oreo Crème Brûlée</th>
-         <td></td>
-         <td>Brown Sugar Crème Brûlée</td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Brown Sugar Crème Brûlée</th>
-         <td>Brown Sugar Latte</td>
-         <td>Oreo Crème Brûlée</td>
-         <td></td>
-       </tr>
-      </tbody>
-    </table>
 
-    <table class="ninja-oolong">
-      <caption></caption>
-      <thead>
-        <tr>
-          <th scope="col" class="colhead">NINJA OOLONG</th>
-          <th scope="col" class="colhead">INVISIBILITY</th>
-          <th scope="col" class="colhead">REPLICATION</th>
-          <th scope="col" class="colhead">SUBSTITUTION</th>
-        </tr>
-      </thead>
-      <tbody>
-       <tr>
-         <th scope="row" class="rowhead">Oolong Milk Tea</th>
-         <td></td>
-         <td>Oolong Crème</td>
-         <td>Ninja Milk Black Tea</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Peach Oolong</th>
-         <td></td>
-         <td>Lychee Oolong</td>
-         <td>Peach Green Tea</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Lychee Oolong</th>
-         <td></td>
-         <td>Peach Oolong</td>
-         <td>Lychee Green Tea</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Oolong Crème</th>
-         <td>Oolong Tea</td>
-         <td>Oolong Milk Tea</td>
-         <td>Earl Grey/Jasmine Crème</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Rose Oolong</th>
-         <td></td>
-         <td></td>
-         <td>Rose Green Tea</td>
-       </tr>
-      </tbody>
-    </table>
+      <table class="milk-tea ">
+        <caption></caption>
+        <thead>
+          <tr>
+            <th scope="col" class="colhead">NINJA MILK TEA</th>
+            <th scope="col" class="colhead invisibility">INVISIBILITY</th>
+            <th scope="col" class="colhead replication">REPLICATION</th>
+            <th scope="col" class="colhead substitution">SUBSTITUTION</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr>
+           <th scope="row" class="rowhead">Ninja Milk Black Tea</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Ninja Milk Green Tea</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Red Bean Matcha</th>
+           <td class="invisibility">Matcha Milk Tea</td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Pudding Milk Tea</th>
+           <td class="invisibility">Ninja Milk Black Tea</td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Coconut Milk Tea</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Thai Milk Tea</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Taro Milk Tea</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Rose Milk Tea</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Honeydew Milk Tea</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Caramel Macchiato</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Chocolate Oreo Milk Tea</th>
+           <td class="invisibility">Chocolate Milk Tea</td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Chocolate Milk Tea</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+        </tbody>
+      </table>
 
-    <table class="slush">
-      <caption></caption>
-      <thead>
-        <tr>
-          <th scope="col" class="colhead">NINJA SLUSH</th>
-          <th scope="col" class="colhead">INVISIBILITY</th>
-          <th scope="col" class="colhead">REPLICATION</th>
-          <th scope="col" class="colhead">SUBSTITUTION</th>
-        </tr>
-      </thead>
-      <tbody>
-       <tr>
-         <th scope="row" class="rowhead">Pineapple Slush</th>
-         <td></td>
-         <td></td>
-         <td>Pineapple Green Tea</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Lychee Slush</th>
-         <td></td>
-         <td></td>
-         <td>Lychee Green Tea</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Mango Slush</th>
-         <td></td>
-         <td></td>
-         <td>Mango Tea</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Strawberry Slush</th>
-         <td></td>
-         <td></td>
-         <td>Strawberry Green Tea</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Grapefruit Slush</th>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Cappuccino Slush</th>
-         <td></td>
-         <td></td>
-         <td>Caramel Macchiato</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Japanese Matcha Slush</th>
-         <td></td>
-         <td></td>
-         <td>Matcha Milk Tea</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Taro Slush</th>
-         <td></td>
-         <td></td>
-         <td>Taro Milk Tea</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Piña Colada Slush</th>
-         <td></td>
-         <td></td>
-         <td>Pineapple Slush</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Strawberry Banana Slush</th>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Chocolate Banana Slush</th>
-         <td></td>
-         <td></td>
-         <td>Chocolate Oreo Slush</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Chocolate Oreo Slush</th>
-         <td></td>
-         <td></td>
-         <td>Chocolate Banana Slush</td>
-       </tr>
-       <tr>
-         <th scope="row" class="rowhead">Purple Oreo Slush</th>
-         <td>Taro Slush</td>
-         <td></td>
-         <td></td>
-       </tr>
-      </tbody>
-    </table>
+      <table class="fruit-tea">
+        <caption></caption>
+        <thead>
+          <tr>
+            <th scope="col" class="colhead">NINJA FRUIT TEA</th>
+            <th scope="col" class="colhead invisibility">INVISIBILITY</th>
+            <th scope="col" class="colhead replication">REPLICATION</th>
+            <th scope="col" class="colhead substitution">SUBSTITUTION</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr>
+           <th scope="row" class="rowhead">Mango Tea</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Jasmine Honey</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Lychee QQ</th>
+           <td class="invisibility">Lychee Green Tea</td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Passion Fruit QQ</th>
+           <td class="invisibility">Passion Fruit Green Tea</td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Rose Strawberry</th>
+           <td class="invisibility"></td>
+           <td class="replication">Strawberry Green Tea</td>
+           <td class="substitution">Rose Green Tea</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Peach Ice Jelly</th>
+           <td class="invisibility">Peach Green Tea</td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Passion Fruit Lemon-Jade</th>
+           <td class="invisibility"></td>
+           <td class="replication">Strawberry Lemon-Jade</td>
+           <td class="substitution">Passion Fruit Green Tea</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Strawberry Lemon-Jade</th>
+           <td class="invisibility"></td>
+           <td class="replication">Passion Fruit Lemon-Jade</td>
+           <td class="substitution">Strawberry Green Tea</td>
+         </tr>
+        </tbody>
+      </table>
 
-    <div class="toppings">
-      <h5>TOPPINGS</h5>
-      <p>Tapioca / Lychee Jelly / Special Jelly / Mango Popping Boba / Strawberry Popping Boba / Ice Jelly / Pudding / Red Bean</p>
-    </div>
+      <table class="ninja-dairy">
+        <caption></caption>
+        <thead>
+          <tr>
+            <th scope="col" class="colhead">NINJA DAIRY</th>
+            <th scope="col" class="colhead invisibility">INVISIBILITY</th>
+            <th scope="col" class="colhead replication">REPLICATION</th>
+            <th scope="col" class="colhead substitution">SUBSTITUTION</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr>
+           <th scope="row" class="rowhead">Earl Grey Crème</th>
+           <td class="invisibility">Earl Grey Black Tea</td>
+           <td class="replication">Ninja Milk Black Tea</td>
+           <td class="substitution">Jasmine/Oolong Crème</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Jasmine Crème</th>
+           <td class="invisibility">Jasmine Green Tea</td>
+           <td class="replication">Ninja Milk Green Tea</td>
+           <td class="substitution">Earl Grey/Oolong Crème</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Brown Sugar Latte</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Ninja Yellow Milk</th>
+           <td class="invisibility"></td>
+           <td class="replication">Ninja Red Milk</td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Ninja Red Milk</th>
+           <td class="invisibility"></td>
+           <td class="replication">Ninja Yellow Milk</td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Oreo Crème Brûlée</th>
+           <td class="invisibility"></td>
+           <td class="replication">Brown Sugar Crème Brûlée</td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Brown Sugar Crème Brûlée</th>
+           <td class="invisibility">Brown Sugar Latte</td>
+           <td class="replication">Oreo Crème Brûlée</td>
+           <td class="substitution"></td>
+         </tr>
+        </tbody>
+      </table>
 
-    <div class="sugar-level">
-      <h5>SUGAR LEVEL</h5>
-      <p>0% Sugar / 30% Sugar / 50% Sugar / 70% Sugar / 100% Sugar / 120% Sugar</p>
-    </div>
+      <table class="ninja-oolong">
+        <caption></caption>
+        <thead>
+          <tr>
+            <th scope="col" class="colhead">NINJA OOLONG</th>
+            <th scope="col" class="colhead invisibility">INVISIBILITY</th>
+            <th scope="col" class="colhead replication">REPLICATION</th>
+            <th scope="col" class="colhead substitution">SUBSTITUTION</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr>
+           <th scope="row" class="rowhead">Oolong Milk Tea</th>
+           <td class="invisibility"></td>
+           <td class="replication">Oolong Crème</td>
+           <td class="substitution">Ninja Milk Black Tea</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Peach Oolong</th>
+           <td class="invisibility"></td>
+           <td class="replication">Lychee Oolong</td>
+           <td class="substitution">Peach Green Tea</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Lychee Oolong</th>
+           <td class="invisibility"></td>
+           <td class="replication">Peach Oolong</td>
+           <td class="substitution">Lychee Green Tea</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Oolong Crème</th>
+           <td class="invisibility">Oolong Tea</td>
+           <td class="replication">Oolong Milk Tea</td>
+           <td class="substitution">Earl Grey/Jasmine Crème</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Rose Oolong</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution">Rose Green Tea</td>
+         </tr>
+        </tbody>
+      </table>
 
-    <div class="ice-level">
-      <h5>ICE LEVEL</h5>
-      <p>No Ice / Less Ice / Regular Ice / Extra Ice</p>
-    </div>
+      <table class="slush">
+        <caption></caption>
+        <thead>
+          <tr>
+            <th scope="col" class="colhead">NINJA SLUSH</th>
+            <th scope="col" class="colhead invisibility">INVISIBILITY</th>
+            <th scope="col" class="colhead replication">REPLICATION</th>
+            <th scope="col" class="colhead substitution">SUBSTITUTION</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr>
+           <th scope="row" class="rowhead">Pineapple Slush</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution">Pineapple Green Tea</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Lychee Slush</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution">Lychee Green Tea</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Mango Slush</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution">Mango Tea</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Strawberry Slush</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution">Strawberry Green Tea</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Grapefruit Slush</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Cappuccino Slush</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution">Caramel Macchiato</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Japanese Matcha Slush</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution">Matcha Milk Tea</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Taro Slush</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution">Taro Milk Tea</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Piña Colada Slush</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution">Pineapple Slush</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Strawberry Banana Slush</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Chocolate Banana Slush</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution">Chocolate Oreo Slush</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Chocolate Oreo Slush</th>
+           <td class="invisibility"></td>
+           <td class="replication"></td>
+           <td class="substitution">Chocolate Banana Slush</td>
+         </tr>
+         <tr>
+           <th scope="row" class="rowhead">Purple Oreo Slush</th>
+           <td class="invisibility">Taro Slush</td>
+           <td class="replication"></td>
+           <td class="substitution"></td>
+         </tr>
+        </tbody>
+      </table>
 
-    <footer>
+
+      <div class="toppings">
+        <h5>TOPPINGS</h5>
+        <p>Tapioca / Lychee Jelly / Special Jelly / Mango Popping Boba / Strawberry Popping Boba / Ice Jelly / Pudding / Red Bean</p>
+      </div>
+
+      <div class="sugar-level">
+        <h5>SUGAR LEVEL</h5>
+        <p>0% Sugar / 30% Sugar / 50% Sugar / 70% Sugar / 100% Sugar / 120% Sugar</p>
+      </div>
+
+      <div class="ice-level">
+        <h5>ICE LEVEL</h5>
+        <p>No Ice / Less Ice / Regular Ice / Extra Ice</p>
+      </div>
+    </main>
+
+    <footer role="followus">
       Follow us on
       <a href="https://www.facebook.com/teaninjausa">
-        <i class="fab fa-facebook-square">Facebook </i>
+        <i class="fab fa-facebook-square" aria-label="facebook">Facebook </i>
       </a>
       <a href="https://www.instagram.com/teaninja_annarbor/?hl=en">
-        <i class="fab fa-instagram">Instagram </i>
+        <i class="fab fa-instagram" aria-label="instagram">Instagram </i>
       </a>
 
       <p>This website is designed and coded by Jing Cao.</p>

@@ -1,0 +1,126 @@
+/* menu */
+.menu-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 30px auto 30px;
+  grid-template-rows: 150px 30px 30px auto repeat(9, auto);
+  min-height: 1.5em;
+  grid-row-gap: 15px;
+}
+
+.menu-small{
+  /* visibility: visible; */
+  display: block;
+}
+
+.menu-small :first-child{
+  font-weight: bold;
+}
+
+
+table{
+    /* visibility: collapse; */
+    /* display: none; */
+}
+
+
+
+.menu-container > h2{
+  grid-column: 2;
+  grid-row: 2;
+}
+.menu-container > p{
+  grid-column: 2;
+  grid-row: 3;
+}
+.menu-container > .ninja-tricks{
+  grid-column: 2;
+  grid-row: 4;
+}
+.milk-tea-small{
+  grid-column: 2;
+  grid-row: 5;
+}
+.fruit-tea-small{
+  grid-column: 2;
+  grid-row: 6;
+}
+.ninja-dairy-small{
+  grid-column: 2;
+  grid-row: 7;
+}
+.ninja-oolong-small{
+  grid-column: 2;
+  grid-row: 8;
+}
+.slush-small{
+  grid-column: 2;
+  grid-row: 9;
+}
+.toppings{
+  grid-column: 2;
+  grid-row: 10;
+}
+.sugar-level{
+  grid-column: 2;
+  grid-row: 11;
+}
+.ice-level{
+  grid-column: 2;
+  grid-row: 12;
+}
+@media screen and (min-width: 600px) {
+/* menu */
+
+
+.menu-container{
+  padding: 30px;
+  grid-template-rows: 100px 30px 40px 150px repeat(9, auto);
+}
+
+.ninja-tricks img {
+  display: inline-block;
+  width: 48px;
+  height: auto;
+}
+.trick{
+  display: inline-flex;
+  align-items: center;
+
+}
+
+.menu-small{
+  /* visibility: collapse; */
+  display: none;
+}
+.ninja-tricks{
+  /* visibility: visible; */
+  display: block;
+}
+
+.menu-container > .ninja-tricks{
+  grid-column: 2;
+  grid-row: 4;
+}
+.milk-tea{
+  grid-column: 2;
+  grid-row: 5;
+}
+.fruit-tea{
+  grid-column: 2;
+  grid-row: 6;
+}
+.ninja-dairy{
+  grid-column: 2;
+  grid-row: 7;
+}
+.ninja-oolong{
+  grid-column: 2;
+  grid-row: 8;
+}
+.slush{
+  grid-column: 2;
+  grid-row: 9;
+}
+
+}
