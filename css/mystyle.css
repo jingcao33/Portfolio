@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   margin: 0px;
   font-size: 20px;
@@ -153,7 +156,7 @@ footer{
   display: grid;
   width: 100%;
   grid-template-columns: 30px auto 30px;
-  grid-template-rows: 150px 30px 30px 15px repeat(9, auto);
+  /* grid-template-rows: 150px 30px 30px auto repeat(9, auto); */
   min-height: 1.5em;
   grid-row-gap: 15px;
 }
@@ -166,23 +169,17 @@ footer{
 .menu-small :first-child{
   font-weight: bold;
 }
-.ninja-tricks img{
+
+.menu-container > img {
   display: none;
 }
 
-table, .ninja-tricks{
-    /* visibility: collapse; */
-    display: none;
-}
-
-
-
 .menu-container > h2{
-  grid-column: 2;
+  grid-column: 2 / -1;
   grid-row: 2;
 }
 .menu-container > p{
-  grid-column: 2;
+  grid-column: 2 / -1;
   grid-row: 3;
 }
 /* .menu-container > .ninja-tricks{
@@ -191,37 +188,36 @@ table, .ninja-tricks{
 } */
 .milk-tea-small{
   grid-column: 2;
-  grid-row: 5;
+  grid-row: 4;
 }
 .fruit-tea-small{
   grid-column: 2;
-  grid-row: 6;
+  grid-row: 5;
 }
 .ninja-dairy-small{
   grid-column: 2;
-  grid-row: 7;
+  grid-row: 6;
 }
 .ninja-oolong-small{
   grid-column: 2;
-  grid-row: 8;
+  grid-row: 7;
 }
 .slush-small{
   grid-column: 2;
-  grid-row: 9;
+  grid-row: 8;
 }
 .toppings{
   grid-column: 2;
-  grid-row: 10;
+  grid-row: 9;
 }
 .sugar-level{
   grid-column: 2;
-  grid-row: 11;
+  grid-row: 10;
 }
 .ice-level{
   grid-column: 2;
-  grid-row: 12;
+  grid-row: 11;
 }
-
 
 
 /*location&Contact*/
@@ -240,6 +236,9 @@ iframe {
 .location{
   grid-column: 2;
   grid-row: 2;
+}
+.location > a{
+  color: #ffbf00;
 }
 .hours{
   grid-column: 2;
@@ -330,123 +329,227 @@ button:hover {
 
 
 .menu-container{
-  padding: 30px;
-  grid-template-rows: 100px 30px 40px 150px repeat(9, auto);
+  /* padding: 30px; */
+  grid-template-columns: 30px repeat(4,auto) 30px;
+  grid-template-rows: 100px 30px 40px auto repeat(16, auto) repeat(3, auto);
+  grid-gap: 10px;
 }
 
-.ninja-tricks img {
-  display: inline-block;
-  width: 48px;
-  height: auto;
+.menu-container > img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  /* height: 100%; */
 }
-.trick{
-  display: inline-flex;
-  align-items: center;
+.menu-container > div {
+  border-radius: 10px;
+}
+/* .special{
+  height: 200%;
+} */
 
+
+/* .recommendation {
+  grid-column: 2 / span 4;
+  grid-row: 4;
+  overflow: hidden;
+} */
+
+#creme_brulee{
+  grid-row: 5 / 7;
+  grid-column: 2 / 4;
 }
+
+#brown_sugar_latte{
+  grid-row: 5 / 6;
+  grid-column: 4;
+}
+
+#red_ninja_milk{
+  grid-row: 5 / 6;
+  grid-column: 5;
+}
+#teaninja_logo_circle_milk{
+  grid-row: 6 / 7;
+  grid-column: 4;
+}
+#yellow_ninja_milk{
+  grid-row: 6 / 7;
+  grid-column: 5;
+}
+
+
+#grapefruit_slush{
+  grid-column: 4 / 6;
+  grid-row: 7 / 9;
+}
+#cappuccino_slush{
+  grid-column: 2;
+  grid-row: 7;
+}
+#chocolate_banana_slush{
+  grid-column: 3;
+  grid-row: 8;
+}
+#teaninja_logo_circle_slush{
+  grid-column: 2;
+  grid-row: 8;
+}
+.color-block-slush{
+  background-color: #ffbf00;
+  grid-column: 3;
+  grid-row: 7;
+}
+#pinacolada_slush{
+  grid-column: 2 / 4;
+  grid-row: 9 / 11;
+}
+#mango_slush{
+  grid-column: 4;
+  grid-row: 9;
+}
+#purple_preo{
+  grid-column: 5;
+  grid-row: 9;
+}
+#strawberry_banana_slush{
+  grid-column: 5;
+  grid-row: 10;
+}
+.color-block-slush-2{
+  background-color: #FE9A9A;
+  grid-column: 4;
+  grid-row: 10;
+}
+
+#strawberry_lemonjade{
+  grid-column: 4 / 6;
+  grid-row: 11 / 13;
+}
+#passion_fruit_lemonjade{
+  grid-column: 3;
+  grid-row: 11;
+}
+#lychee_oolong{
+  grid-column: 2;
+  grid-row: 12;
+}
+#peach_oolong{
+  grid-column: 3;
+  grid-row: 12;
+}
+.color-block-fruit{
+  background-color: #ffbf00;
+  grid-column: 2;
+  grid-row: 11;
+}
+#peach_ice_jelly{
+  grid-column: 2 / 4;
+  grid-row: 13 / 15;
+}
+#passion_fruit_qq{
+  grid-column: 4;
+  grid-row: 13;
+}
+#teaninja_logo_circle_fruit{
+  grid-column: 5;
+  grid-row: 13;
+}
+#lychee_qq{
+  grid-column: 4;
+  grid-row: 14;
+}
+#rose_strawberry_tea{
+  grid-column: 5;
+  grid-row: 14;
+}
+
+
+#three_q_milk_tea{
+  grid-column: 4 / 6;
+  grid-row: 15 / 17;
+}
+#chocolate_oreo_milk_tea{
+  grid-column: 2;
+  grid-row: 15
+}
+#oolong_milk_tea{
+  grid-column: 2;
+  grid-row: 16;
+}
+#pudding_milk_tea{
+  grid-column: 3;
+  grid-row: 16;
+}
+#teaninja_logo_circle_milktea{
+  grid-column: 3;
+  grid-row: 15;
+}
+#red_bean_matcha{
+  grid-column: 2 / 4;
+  grid-row: 17 / 19;
+}
+#caramel_macchiato{
+  grid-column: 4;
+  grid-row: 17;
+}
+#taro_milk_tea{
+  grid-column: 5;
+  grid-row: 17;
+}
+#thai_milk_tea{
+  grid-column: 4;
+  grid-row: 18;
+}
+.color-block-milktea{
+  background-color: #ffbf00;
+  grid-column: 5;
+  grid-row: 18;
+}
+
+
+
+#roasted_oolong_float{
+  grid-column: 4 / 6;
+  grid-row: 19 / 21;
+}
+#teaninja_logo_circle_float{
+  grid-column: 2;
+  grid-row: 19;
+}
+#earl_grey_float{
+  grid-column: 3;
+  grid-row: 19;
+}
+#jasmine_float{
+  grid-column: 3;
+  grid-row: 20;
+}
+.color-block-float{
+  background-color: #FE9A9A;
+  grid-column: 2;
+  grid-row: 20;
+}
+
+.toppings{
+  grid-column: 2 / -2;
+  grid-row: 21;
+}
+.sugar-level{
+  grid-column: 2 / -2;
+  grid-row: 22;
+}
+.ice-level{
+  grid-column: 2 / -2;
+  grid-row: 23;
+}
+
 
 .menu-small{
   /* visibility: collapse; */
   display: none;
 }
-.ninja-tricks{
-  /* visibility: visible; */
-  display: block;
-}
 
-.menu-container > .ninja-tricks{
-  grid-column: 2;
-  grid-row: 4;
-}
-.milk-tea{
-  grid-column: 2;
-  grid-row: 5;
-  color: #454545;
-}
-.fruit-tea{
-  grid-column: 2;
-  grid-row: 6;
-  color: #454545;
-}
-.ninja-dairy{
-  grid-column: 2;
-  grid-row: 7;
-  color: #454545;
-}
-.ninja-oolong{
-  grid-column: 2;
-  grid-row: 8;
-  color: #454545;
-}
-.slush{
-  grid-column: 2;
-  grid-row: 9;
-  color: #454545;
-}
-
-
-table{
-  /* visibility: visible; */
-  display: table;
-  font-family: 'Josefin Sans', sans-serif;
-  margin: 15px;
-  line-height: 1.5em;
-  border-collapse: separate;
-  border-spacing: 0;
-  max-width: 90%
-}
-
-.colhead {
-  min-width: 20%;
-  padding: 20px;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #FE9A9A;
-}
-thead th {
-  border-top: 2px solid black;
-}
-th, td {
-  text-align: center;
-  border-bottom: 2px solid black;
-  vertical-align: middle;
-  padding: 15px;
-}
-.rowhead, .colhead:first-child {
-  border-left: 2px solid black;
-}
-.colhead:last-child, td:last-child {
-
-  border-right: 2px solid black;
-}
-
-
-tbody tr:nth-child(even) {
-  background-color: #FFD1D1;
-}
-tbody tr:nth-child(odd) {
-  background-color: #fff;
-}
-
-/* tbody tr:hover {
-  background-color: #fab9cf;
-} */
-
-thead th:first-child {
-  border-top-left-radius: 10px;
-}
-thead th:last-child {
-  border-top-right-radius: 10px;
-}
-
-tbody tr:last-child th {
-  border-bottom-left-radius: 10px;
-}
-
-tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 10px;
-}
 
     /* Gallery */
 
@@ -498,9 +601,19 @@ tbody tr:last-child td:last-child {
 
     .about-container{
       grid-template-columns: 70px 1fr 70px 1fr 70px;
-      grid-template-rows: 100px auto auto 70px;
-    }
+      grid-template-rows: 100px auto auto auto 70px;
 
+    }
+    .ad{
+      background-image: url("../images/teaninja_decorative_wall_pacman.jpg");
+      height: 500px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-row: 2;
+      grid-column: 2 / -2;
+    }
 
     .slogan{
 
@@ -511,21 +624,21 @@ tbody tr:last-child td:last-child {
 
     footer{
       grid-column: 1 / -1;
-      grid-row: 4 / 5;
+      grid-row: 5;
 
     }
 
     #intro-1 {
       grid-column: 2 / 3;
-      grid-row: 2
+      grid-row: 3
     }
     #intro-2 {
       grid-column: 4 / 5;
-      grid-row: 2;
+      grid-row: 3;
     }
     #intro-3 {
       grid-column: 2 / 5;
-      grid-row: 3;
+      grid-row: 4;
     }
 
 
@@ -559,7 +672,7 @@ tbody tr:last-child td:last-child {
   background-position: center;
 
 }
-.flip-card-front-1 > p {
+.flip-card-front-1 p {
   font-size: 36px;
   color: #FE9A9A;
   margin: 120px 90px;
@@ -571,11 +684,15 @@ tbody tr:last-child td:last-child {
   background-color: #454545;
   color:#ffbf00 ;
 }
-.flip-card-back-1 >p{
+.flip-card-back-1 p{
   margin: 100px 20px;
 }
 
 .flip-card-1:hover .flip-card-inner-1{
+  transform: rotateY(180deg);
+  transition: transform 0.6s;
+}
+.flip-card-1:focus .flip-card-inner-1{
   transform: rotateY(180deg);
   transition: transform 0.6s;
 }
@@ -610,7 +727,7 @@ tbody tr:last-child td:last-child {
   background-size: cover;
   background-position: center;
 }
-.flip-card-front-2 > p {
+.flip-card-front-2 p {
   font-size: 36px;
   color: #FE9A9A;
   margin: 120px 70px;
@@ -622,10 +739,14 @@ tbody tr:last-child td:last-child {
   background-color: #454545;
   color:#ffbf00 ;
 }
-.flip-card-back-2 >p{
+.flip-card-back-2 p{
   margin: 50px 20px;
 }
 .flip-card-2:hover .flip-card-inner-2{
+  transform: rotateY(180deg);
+  transition: transform 0.6s;
+}
+.flip-card-2:focus .flip-card-inner-2{
   transform: rotateY(180deg);
   transition: transform 0.6s;
 }
@@ -661,7 +782,7 @@ tbody tr:last-child td:last-child {
   background-position: center;
 
 }
-.flip-card-front-3 > p {
+.flip-card-front-3 p {
   font-size: 36px;
   color: #FE9A9A;
   margin: 120px 90px;
@@ -675,10 +796,14 @@ tbody tr:last-child td:last-child {
   background-color: #454545;
   color:#ffbf00 ;
 }
-.flip-card-back-3 >p{
+.flip-card-back-3 p{
   margin: 80px 20px;
 }
 .flip-card-3:hover .flip-card-inner-3{
+  transform: rotateY(180deg);
+  transition: transform 0.6s;
+}
+.flip-card-3:focus .flip-card-inner-3{
   transform: rotateY(180deg);
   transition: transform 0.6s;
 }
@@ -705,5 +830,26 @@ tbody tr:last-child td:last-child {
   }
   .open {
     display: none;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s none;
+    transition: top 1s none;
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
   }
 }
