@@ -293,12 +293,7 @@ button:hover {
   /* grid-row: 3;
   grid-column: 2; */
 }
-/*
-.gallery-column {
-  flex: 100%;
-  max-width: 100%;
-  padding: 0 10px;
-} */
+
 
 .gallery-row img {
   margin-top: 5px;
@@ -613,7 +608,25 @@ button:hover {
       background-size: cover;
       grid-row: 2;
       grid-column: 2 / -2;
+      -webkit-animation-name: ad; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+      animation-name: ad;
+      animation-duration: 2s;
+      animation-delay: 1s;
+      animation-timing-function:linear;
+      /* animation-iteration-count: infinite; */
+      animation-fill-mode: forwards;
     }
+      @-webkit-keyframes ad {
+      from {background-image: url("../images/teaninja_decorative_wall_pacman.jpg");}
+      to {background-image: url("../images/hot_drinks_test.jpg");}
+    }
+
+      /* Standard syntax */
+      @keyframes ad {
+        from {background-image: url("../images/teaninja_decorative_wall_pacman.jpg");}
+        to {background-image: url("../images/hot_drinks_test.jpg");}
+      }
 
     .slogan{
 
@@ -844,12 +857,15 @@ button:hover {
     padding: 6px;
     position: absolute;
     top: -40px;
-    -webkit-transition: top 1s none;
-    transition: top 1s none;
+    -webkit-transition: none;
+    transition: none;
     z-index: 1;
   }
 
   .skip a:focus{
     top:0;
+  }
+  .ad{
+    animation: none;
   }
 }
